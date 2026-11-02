@@ -214,21 +214,6 @@
       .result .rmeta{color:var(--muted);font-size:14.5px;margin:4px 0 16px}
       .result .row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
 
-      /* ---------- advice ---------- */
-      .advice-list{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:0}
-      .advice-list li{
-        display:flex;gap:12px;padding:13px 2px;border-top:1px solid var(--line);
-      }
-      .advice-list li:first-child{border-top:none;padding-top:4px}
-      .advice-list .n{
-        flex:none;width:28px;height:28px;border-radius:50%;
-        background:var(--accent-soft);color:var(--accent-dark);
-        display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;margin-top:2px;
-      }
-      @media (prefers-color-scheme: dark){ .advice-list .n{color:var(--accent)} }
-      .advice-list p{margin:0;font-size:15.5px}
-      .advice-list p b{font-weight:600}
-      .advice-list p .fix{color:var(--muted)}
       footer{margin-top:30px;color:var(--muted);font-size:14px;text-align:center}
 
       /* ---------- modal ---------- */
@@ -384,24 +369,6 @@
           </div>
         </div>
       </div>
-
-      <section class="card" aria-labelledby="adviceTitle">
-        <div class="card-head">
-          <div>
-            <h2 id="adviceTitle">আগের সাইটের ভুল — আর সেগুলো থেকে পাওয়া পরামর্শ</h2>
-            <div class="sub">এই পেজটি বানানোর আগে আগের সংস্করণটি খুঁটিয়ে দেখা হয়েছে। যেসব ভুল পাওয়া গেছে, এখানে সেগুলো ঠিক করা হয়েছে।</div>
-          </div>
-        </div>
-        <ul class="advice-list">
-          <li><span class="n">১</span><p><b>ড্র্যাগ হ্যান্ডল ছিল শুধু সাজানো — টানলে কিছুই হতো না।</b> <span class="fix">পরামর্শ: যেকোনো বোতাম বা হ্যান্ডল দেখালেই তা সত্যিই কাজ করতে হবে। এখানে হ্যান্ডল টেনে ক্রম বদলানো যায়, পাশাপাশি উপরে/নিচে বোতামও আছে।</span></p></li>
-          <li><span class="n">২</span><p><b>মার্জের আগে কোনো প্রিভিউ ছিল না — শুধু জেনেরিক আইকন দেখাত।</b> <span class="fix">পরামর্শ: ফাইল পাঠানোর আগে মানুষকে দেখতে দিন আসলে কী যাচ্ছে। এখানে ছবির আসল থাম্বনেইল ও PDF-এর প্রথম পৃষ্ঠার ছবি দেখা যায়, আর যেকোনো PDF-এ চাপ দিলে সব পৃষ্ঠার প্রিভিউ খোলে।</span></p></li>
-          <li><span class="n">৩</span><p><b>একই ফাইল বারবার যোগ করা যেত, কোনো সতর্কতা ছাড়াই।</b> <span class="fix">পরামর্শ: নাম ও আকার মিলে গেলে ডুপ্লিকেট ধরে সতর্ক করা উচিত। এখানে একই ফাইল আবার দিলে তা বাদ দিয়ে জানিয়ে দেওয়া হয়।</span></p></li>
-          <li><span class="n">৪</span><p><b>কোনো কাস্টমাইজেশন ছিল না — পৃষ্ঠার আকার বা মান বদলানোর উপায় নেই।</b> <span class="fix">পরামর্শ: অন্তত পৃষ্ঠার আকার, অভিমুখ, মার্জিন, ছবি বসানোর ধরন ও মান বেছে নেওয়ার সুযোগ থাকা উচিত — এখানে সবগুলোই আছে।</span></p></li>
-          <li><span class="n">৫</span><p><b>ডাউনলোড ছিল দ্বিধাজনক — অটো-ডাউনলোডের পাশাপাশি আবার আলাদা বোতাম।</b> <span class="fix">পরামর্শ: একটাই স্পষ্ট ধাপ রাখুন। এখানে PDF তৈরি হলে একটিমাত্র ডাউনলোড বোতাম আসে।</span></p></li>
-          <li><span class="n">৬</span><p><b>কোথাও সীমা লেখা ছিল না — কত বড় ফাইল বা কয়টা ফাইল দেওয়া যাবে, জানার উপায় নেই।</b> <span class="fix">পরামর্শ: সীমা আগেই স্পষ্ট করে বলুন। এখানে সর্বোচ্চ ফাইলের আকার, ফাইলের সংখ্যা ও পৃষ্ঠা সংখ্যা উপরেই লেখা আছে।</span></p></li>
-          <li><span class="n">৭</span><p><b>বাংলা ইন্টারফেসে এখানে-সেখানে ইংরেজি শব্দ মিশে ছিল।</b> <span class="fix">পরামর্শ: একটা ভাষাই ধারাবাহিকভাবে ব্যবহার করুন। এই পেজের ইন্টারফেসের সব লেখা বাংলায় রাখা হয়েছে — শুধু ফাইল ফরম্যাটের নাম (PDF, JPG ইত্যাদি) প্রযুক্তিগত নাম হিসেবে আগের মতোই আছে।</span></p></li>
-        </ul>
-      </section>
 
       <footer>ফাইল কখনোই আপনার ডিভাইস ছেড়ে যায় না — ব্রাউজার বন্ধ করলে সব তথ্য মুছে যায়।</footer>
     </div>
